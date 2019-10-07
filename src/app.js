@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
     el: "#app",
     data:{
       tasks: [
-        {name: "Dishes", priority: "High"},
-        {name: "Brush Hallway", priority: "Low"},
-        {name: "Feed Cats", priority: "High"}
+        {name: "Dishes", priority: "high"},
+        {name: "Brush Hallway", priority: "low"},
+        {name: "Feed Cats", priority: "high"}
       ],
       newTask: "",
       priority: ""
