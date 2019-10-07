@@ -5,6 +5,7 @@ body {
 #app h1 {
   text-align: center;
   background-color: darkslategray;
+  color: ghostwhite;
   margin: -0.5rem;
   padding: 1rem;
 }
