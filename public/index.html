@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./js/bundle.js"></script>
+  <title>Kevin's ToDo List</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Kevin's ToDo List ⚠️</h1>
+    <form v-on:submit.prevent="saveNewTask">
+      <h2>Add a new task</h2>
+      <input type="text" id="new-task" v-model="newTask" placeholder="Enter new task" required />
+      <label for="high-prior">High Priority</label>
+      <input type="radio" id="high-prior" name="priority" value="high-priority" v-model="priority" required>
+      <label for="low-prior">Low Priority</label>
+      <input type="radio" id="low-prior" name="priority" value="low-priority" v-model="priority">
+      <input type="submit" value="Add New Task">
+    </form>
+    <hr>
+    <ul>
+      <li  v-for="task in tasks">
+        <span>{{ task.name }}</span>
+        <span>- {{ task.priority }}</span>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
