@@ -1,0 +1,85 @@
+body {
+  background-color: ghostwhite;
+}
+
+#app h1 {
+  text-align: center;
+  background-color: darkslategray;
+  margin: -0.5rem;
+  padding: 1rem;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  border: darkslategrey 3px solid;
+  margin: 0 -0.6rem;
+  padding: 1rem;
+}
+
+.form-wrapper h2 {
+  text-align: center;
+}
+
+.form-wrapper input[type=text] {
+  padding: 0.5rem;
+  font-size: 14px;
+}
+
+.form-wrapper input[type=submit] {
+  padding: 0.6rem;
+  font-size: 14px;
+  margin-left: 0.2rem;
+  background-color: azure;
+  color: black;
+}
+
+.legend {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.legend ul {
+  list-style: none;
+  margin-left: -2rem;
+}
+
+.legend span {
+  border: 1px solid #ccc;
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin: 2px;
+}
+
+.legend .blue {
+  background-color: darkblue;
+}
+
+.legend .red {
+  background-color: tomato;
+}
+
+.list-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.list-wrapper ul {
+  list-style: none;
+  margin-left: -2rem;
+}
+
+.list-wrapper li {
+  padding: 1rem;
+  margin: 0.4rem -0.5rem;
+}
+
+.high-priority {
+  border: tomato 2px solid;
+}
+
+.low-priority {
+  border: darkblue 2px solid;
+}

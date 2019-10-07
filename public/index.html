@@ -5,27 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="./js/bundle.js"></script>
+  <link rel="stylesheet" href="./css/main.css">
   <title>Kevin's ToDo List</title>
 </head>
 <body>
   <div id="app">
     <h1>Kevin's ToDo List ⚠️</h1>
-    <form v-on:submit.prevent="saveNewTask">
-      <h2>Add a new task</h2>
-      <input type="text" id="new-task" v-model="newTask" placeholder="Enter new task" required />
-      <label for="high-prior">High Priority</label>
-      <input type="radio" id="high-prior" name="priority" value="high" v-model="priority" required>
-      <label for="low-prior">Low Priority</label>
-      <input type="radio" id="low-prior" name="priority" value="low" v-model="priority">
-      <input type="submit" value="Add New Task">
-    </form>
-    <hr>
-    <ul>
-      <li  v-for="task in tasks" v-bind:class="task.priority == 'high' ? 'high-priority':'low-priorty'">
-        <span>{{ task.name }}</span>
-        <span>- {{ task.priority }}</span>
-      </li>
-    </ul>
+    <div class="form-wrapper">
+      <form v-on:submit.prevent="saveNewTask">
+        <h2>Add a new task</h2>
+        <input type="text" id="new-task" v-model="newTask" placeholder="Enter new task" required />
+        <label for="high-prior">High Priority</label>
+        <input type="radio" id="high-prior" name="priority" value="high" v-model="priority" required>
+        <label for="low-prior">Low Priority</label>
+        <input type="radio" id="low-prior" name="priority" value="low" v-model="priority">
+        <input type="submit" value="Add New Task">
+      </form>
+    </div>
+    <div class="legend">
+      <ul>
+        <li><span class="blue"></span> Low Priority</li>
+        <li><span class="red"></span> High Priority</li>
+      </ul>
+    </div>
+    <div class="list-wrapper">
+      <ul>
+        <li  v-for="task in tasks" v-bind:class="task.priority == 'high' ? 'high-priority':'low-priority'">
+          <span>{{ task.name }}</span>
+        </li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
