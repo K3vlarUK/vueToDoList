@@ -16,9 +16,9 @@
         <h2>Add a new task</h2>
         <input type="text" id="new-task" v-model="newTask" placeholder="Enter new task" required />
         <label for="high-prior">High Priority</label>
-        <input type="radio" id="high-prior" name="priority" value="high" v-model="priority" required>
+        <input type="radio" id="high-prior" name="priority" value="high" v-model="newPriority" required>
         <label for="low-prior">Low Priority</label>
-        <input type="radio" id="low-prior" name="priority" value="low" v-model="priority">
+        <input type="radio" id="low-prior" name="priority" value="low" v-model="newPriority">
         <input type="submit" value="Add New Task">
       </form>
     </div>

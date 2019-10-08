@@ -11,16 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
         {name: "Feed Cats", priority: "high"}
       ],
       newTask: "",
-      priority: ""
+      newPriority: ""
     },
     methods:{
       saveNewTask: function() {
         this.tasks.push({
           name: this.newTask,
-          priority: this.priority
+          priority: this.newPriority
         });
         this.newTask = "";
-        this.priority = "";
+        this.newPriority = "";
       }
     }
   });

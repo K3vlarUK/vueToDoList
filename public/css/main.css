@@ -1,5 +1,6 @@
 body {
   background-color: ghostwhite;
+  font-family: helvetica;
 }
 
 #app h1 {
@@ -8,6 +9,7 @@ body {
   color: ghostwhite;
   margin: -0.5rem;
   padding: 1rem;
+  width: 100vmax;
 }
 
 .form-wrapper {
@@ -16,6 +18,7 @@ body {
   border: darkslategrey 3px solid;
   margin: 0 -0.6rem;
   padding: 1rem;
+  width: 100vmax;
 }
 
 .form-wrapper h2 {
@@ -65,6 +68,7 @@ body {
 .list-wrapper {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .list-wrapper ul {
@@ -75,6 +79,7 @@ body {
 .list-wrapper li {
   padding: 1rem;
   margin: 0.4rem -0.5rem;
+  width: 75vmax;
 }
 
 .high-priority {
