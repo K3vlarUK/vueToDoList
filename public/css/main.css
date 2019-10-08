@@ -82,10 +82,10 @@ body {
   width: 75vmax;
 }
 
-.high-priority {
+.high {
   border: tomato 2px solid;
 }
 
-.low-priority {
+.low {
   border: darkblue 2px solid;
 }

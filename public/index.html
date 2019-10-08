@@ -30,7 +30,7 @@
     </div>
     <div class="list-wrapper">
       <ul>
-        <li  v-for="task in tasks" v-bind:class="task.priority == 'high' ? 'high-priority':'low-priority'">
+        <li  v-for="task in tasks" v-bind:class="task.priority">
           <span>{{ task.name }}</span>
         </li>
       </ul>
